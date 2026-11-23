@@ -1,10 +1,8 @@
 #count character frequency from a string
 def count_frequency(string):
-    seen = set()
     freq = {}
     for char in string:
-        if char not in seen:
-            seen.add(char)
+        if char not in freq:
             freq[char] = 1
         else:
             freq[char] += 1
